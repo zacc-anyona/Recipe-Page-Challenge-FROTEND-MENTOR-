@@ -24,7 +24,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
  ![Provided by Frontend Mentor](./design/desktop-design.jpg)
  ![Provided by Frontend Mentor](./design/desktop-preview.jpg)
  ![Provided by Frontend Mentor](./design/mobile-design.jpg)
-### Screenshot
+### Screenshot For My Solutions
 
 ![My Solution](./screenshots/desktop-screenshot.png)
 ![My Solution](./screenshots/mobile-screenshot.png)
