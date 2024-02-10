@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    :root {
+      --primary-nutmeg: hsl(14, 45%, 36%);
+      --primary-dark-raspberry: hsl(332, 51%, 32%);
+
+      --neutral-white: hsl(0, 0%, 100%);
+      --neutral-rose-white: hsl(330, 100%, 98%);
+      --neutral-eggshell: hsl(30, 54%, 90%);
+      --neutral-light-gray: hsl(30, 18%, 87%);
+      --neutral-wenge-brown: hsl(30, 10%, 34%);
+      --neutral-dark-charcoal: hsl(24, 5%, 18%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--neutral-white);
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      color: var(--neutral-wenge-brown);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .content-style {
+      padding: 0 5%;
+    }
+
+    img {
+      all: unset;
+      width: 100vw;
+    }
+
+    h1, h2 {
+      font-family: 'Young Serif', serif;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: var(--neutral-dark-charcoal);
+    }
+
+    h2 {
+      color: var(--primary-nutmeg);
+    }
+
+    h3 {
+      color: var(--primary-dark-raspberry);
+    }
+
+    hr {
+      height: 1px;
+      background-color: var(--neutral-light-gray);
+      border: none;
+    }
+
+    .prep-time {
+      background: var(--neutral-rose-white);
+      padding: 0.8em;
+      border-radius: 0.5em;
+    }
+
+    ul.preparation > li {
+      color: var(--primary-dark-raspberry);
+      font-weight: 400;
+      
+    }
+
+    span.prep {
+      font-family: 'Outfit', sans-serif;
+      color: var(--neutral-wenge-brown);
+      font-weight: 400;
+    }
+
+    ul.ingredients > li {
+      color: var(--primary-nutmeg);
+      font-weight: 600;
+    }
+
+    span.ingredient {
+      font-family: 'Outfit', sans-serif;
+      color: var(--neutral-wenge-brown);
+      font-weight: 400;
+    }
+
+   ol > li {
+    color: var(--primary-nutmeg);
+    font-weight: 600;
+   }
+
+   span.instruction {
+    font-family: 'Outfit', sans-serif;
+    color: var(--neutral-wenge-brown);
+    font-weight: 400;
+   }
+
+   table {
+    border-collapse: collapse;
+    width: 100%;
+   }
+
+   tr {
+    border-bottom: solid 1px var(--neutral-light-gray);
+   }
+
+   td {
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+   }
+
+   td.nutrient-value {
+    font-weight: 700;
+    color: var(--primary-nutmeg);
+   }
+
+   @media screen and (min-width: 600px) {
+    body {
+      font-size: 16px;
+      background: var(--neutral-eggshell);
+      padding: 5% 30%;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 1.5em;
+    }
+
+    .content {
+      background: var(--neutral-white);
+      padding: 2rem;
+      border-radius: 1.5em;
+    }
+
+    .content-style {
+      padding: 0;
+    }
+   }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="content">
+    <img src="assets/images/image-omelette.jpeg" alt="A plate of omellette and toast bread.">
+    <div class="content-style">
+      <header>
+      
+        <h1>Simple Omellette Recipe</h1>
+        <p>
+          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      </p>
+    
+      <div class="prep-time">
+        <h3>Preparation time</h3>
+        <ul class="preparation">
+          <li>
+            <span class="prep">
+              <b>Total: </b> Approximately 10 minutes
+            </span>
+          </li>
+          <li>
+            <span class="prep">
+              <b>Preparation: </b> 5 minutes
+            </span>
+          </li>
+          <li>
+            <span class="prep">
+              <b>Cooking: </b> 5 minutes
+            </span>
+          </li>
+        </ul>
+      </div>
+    
+      </header>
+      
+      <main>
+        <h2>Ingredients</h2>
+    
+        <ul class="ingredients">
+          <li>
+            <span class="ingredient">
+              2-3 large eggs
+            </span>
+          </li>
+          <li>
+            <span class="ingredient">
+              Salt, to taste
+            </span>
+          </li>
+          <li>
+            <span class="ingredient">
+              Pepper, to taste
+            </span>
+          </li>
+          <li>
+            <span class="ingredient">
+              1 tablespoon of butter or oil
+            </span>
+          </li>
+          <li>
+            <span class="ingredient">
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </span>
+          </li>
+        </ul>
+        <hr>
+    
+        <h2>Instructions</h2>
+    
+        <ol>
+          <li>
+            <span class="instruction">
+              <b>Beat the eggs:</b>
+            In a bowl, beat the eggs with a pinch of salt and pepper until they
+            are well mixed. You can add a tablespoon of water or milk for a fluffier
+            texture.
+            </span>
+          </li>
+          <li>
+            <span class="instruction">
+              <b>Heat the pan:</b>
+            Place a non-stick frying pan over medium heat and add butter or oil.
+            </span>
+          </li>
+          <li>
+            <span class="instruction">
+              <b>Cook the omellete:</b>
+            Once the butter is melted and bubbling, pour in the eggs. Tilt the 
+            pan to ensure the eggs evenly coat the surface.
+            </span>
+          </li>
+          <li>
+            <span class="instruction">
+              <b>Add fillings (optional)</b>
+            When the eggs begin to set at the edges but are still slightly runny
+            in the middle, sprinkle your chosen fillings over one hasf of the
+            omellete.
+            </span>
+          </li>
+          <li>
+            <span class="instruction">
+              <b>Fold and serve:</b>
+            As the omellete continues to cook, carefully lift one edge and fold it
+            over the fillings. Let it cook for another minute, then slide it onto a plate.
+            </span>
+          </li>
+          <li>
+            <span class="instruction">
+              <b>Enjoy:</b>
+            Serve hot, with additional salt and pepper if needed.
+            </span>
+          </li>
+        </ol>
+        <hr>
+    
+        <h2>Nutrition</h2>
+    
+        <p>The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
+    
+        <table>
+          <tr>
+            <td>Calories</td>
+            <td class="nutrient-value">277kcal</td>
+          </tr>
+    
+          <tr>
+            <td>Carbs</td>
+            <td class="nutrient-value">0g</td>
+          </tr>
+    
+          <tr>
+            <td>Protein</td>
+            <td class="nutrient-value">20g</td>
+          </tr>
+    
+          <tr>
+            <td>Fat</td>
+            <td class="nutrient-value">22g</td>
+          </tr>
+        </table>
+      </main>
+    
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/zacc-anyona" target="_blank">Anyona Zaddock Ogada</a>.
+        <br>
+        <a href="https://twitter.com/anyona_zadocc">Twitter</a>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
